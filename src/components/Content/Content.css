@@ -1,0 +1,6 @@
+#content-wrapper{
+    width: 80vw;
+    padding: 15px 24px 24px 75px;
+    background-color: #2e2e2e;
+    height: calc(100vh - 70px - 48px);
+}
