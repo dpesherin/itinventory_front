@@ -7,9 +7,12 @@ import PrivateRouter from "./components/Services/PrivateRouter"
 import ConditionalSidebar from './components/Services/ConditionalSidebar';
 //IMPORT PAGES
 import Home from "./pages/Home/Home";
-import Inventory from './pages/Inventory/Inventory';
-import User from './pages/Profile/User';
+import Items from './pages/Items/Items';
 import Login from './pages/Login/Login';
+import Profile from './pages/Profile/Profile';
+import Settings from './pages/Settings/Settings';
+import Creditials from './pages/Creditials/Creditials';
+import Users from './pages/Users/Users';
 //END IMPORT
 
 function App() {
@@ -24,8 +27,11 @@ function App() {
               <Route path='/login'  element={<Login />} />
               <Route element={<PrivateRouter />}>
                 <Route path='/'  element={<Home />} />
-                <Route path='/user'  element={<User />} />
-                <Route path='/inventory'  element={<Inventory />} />
+                <Route path='/users'  element={<Users />} />
+                <Route path='/creditials'  element={<Creditials />} />
+                <Route path='/settings'  element={<Settings />} />
+                <Route path='/profile'  element={<Profile />} />
+                <Route path='/items'  element={<Items />} />
               </Route>
             </Routes>
           </Content>

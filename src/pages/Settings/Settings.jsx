@@ -1,7 +1,10 @@
 import React from 'react'
+import "./Settings.css"
 
 export default function Settings() {
   return (
-    <h1 className='page-title'>SETTINGS</h1>
+    <div className="sided">
+      <h1 className='page-title'>SETTINGS</h1>
+    </div>
   )
 }

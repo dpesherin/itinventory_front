@@ -1,6 +1,13 @@
 #content-wrapper{
     width: 80vw;
-    padding: 15px 24px 24px 75px;
     background-color: #2e2e2e;
-    height: calc(100vh - 70px - 48px);
+    height: calc(100vh - 45px - 45px);
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, .2) transparent;
+}
+@media screen and (width <= 1366px) {
+    #content-wrapper{
+      width: 100vw;
+    }
 }

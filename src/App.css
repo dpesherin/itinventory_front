@@ -12,11 +12,20 @@
   align-items: center;
   min-height: 100vh;
 }
+.w-100{
+  position: relative;
+  width: 100%;
+}
 #content{
   display: flex;
   flex-direction: row;
   width: 80vw;
   height: calc(100vh - 70px - 48px);
+}
+@media screen and (width <= 1366px) {
+  #content{
+    width: 100vw;
+  }
 }
 #root{
   display: flex;
@@ -30,7 +39,29 @@
   margin-top: auto;
 }
 .page-title{
-  font-size: 24;
+  font-size: 24px;
   color: #e6e6e6;
   font-weight: 600;
+}
+.f-row{
+  display: flex;
+  flex-direction: row;
+}
+.jc-sb{
+  justify-content: space-between;
+}
+.jc-sa{
+  justify-content: space-around;
+}
+.jc-c{
+  justify-content: center;
+}
+.jc-s{
+  justify-content: flex-start;
+}
+.jc-e{
+  justify-content: flex-end;
+}
+.sided{
+  margin-left: 56px;
 }

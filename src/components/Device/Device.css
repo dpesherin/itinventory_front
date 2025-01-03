@@ -1,0 +1,18 @@
+.d-item{
+    border: 1px solid #d6d6d6;
+    border-radius: 10px;
+}
+.d-item>.block-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 24px;
+}
+.block-info>p{
+    color: #d6d6d6;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}

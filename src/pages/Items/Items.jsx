@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Home() {
+export default function Items() {
   return (
     <div className="sided">
-      <h1 className='page-title'>HOME</h1>
+      <h1 className='page-title'>ITEMS</h1>
     </div>
   )
 }

@@ -37,3 +37,8 @@
     text-transform: uppercase;
     cursor: pointer;
 }
+@media screen and (width <= 576px) {
+    .form>input, .form>button{
+        width: 80vw;
+    }
+}

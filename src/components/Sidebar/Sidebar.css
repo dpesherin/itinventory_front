@@ -1,14 +1,31 @@
 #sidebar{
     position: fixed;
-    background-color: #242424;
-    height: calc(100vh - 70px - 48px);
-    transition: 0.3s ease-in-out;
+    background-color: transparent;
+    height: calc(100vh - 45px - 45px);
+    transition: 1.25s ease-in-out;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 5px 0;
-    z-index: 1000;
+    z-index: 999;
+    overflow: hidden;
+}
+.closed{
+    width: 56px;
+    transition: none !important;
+}
+.open{
+    width: 80vw;
+}
+.transparent{
+    cursor: default;
+    background-color: transparent !important;
+}
+@media screen and (width <= 1366px) {
+    .open{
+      width: 100vw;
+    }
 }
 #sidebar>.row{
     display: flex;
@@ -16,10 +33,17 @@
     align-items: center;
     justify-content: flex-end;
 }
-#sidebar>.row>img{
+#sidebar>.row>.ico{
     height: 36px;
     width: 36px;
+    background-color: #242424;
     margin: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#sidebar>.row>.ico>img{
+    width: 100%;
     cursor: pointer;
 }
 .hidden {
@@ -56,7 +80,7 @@
 @keyframes fadeIn {
     from {
       opacity: 0;
-      transform: translateY(-20px); /* Для дополнительного эффекта движения */
+      transform: translateY(-20px);
     }
     to {
       opacity: 1;
@@ -65,5 +89,48 @@
   }
   
   .fade-in {
-    animation: fadeIn 0.8s forwards; /* Анимация длится 0.4 секунды */
+    animation: fadeIn 1.25s forwards;
+  }
+
+  .circle {
+    position: absolute;
+    top: 15px; 
+    left: 10px; 
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #242424;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+@keyframes circleFade {
+    0% {
+        width: 15px;
+        height: 15px;
+        opacity: 0.85;
+        transform: translate(-50%, -50%);
+      }
+      30% {
+        width: 60px;
+        height: 60px;
+        opacity: 0.9;
+        transform: translate(-50%, -50%);
+      }
+      68%{
+        width: 100vw;
+        height: 100vw;
+        opacity: 0.999;
+        transform: translate(-50%, -50%);
+      }
+      100% {
+        width: 500vw;
+        height: 500vw;
+        opacity: 1;
+        transform: translate(-50%, -50%);
+      }
+}
+
+  .visible {
+    animation: circleFade 1s ease-in forwards;
   }
