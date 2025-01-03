@@ -1,8 +1,8 @@
 import React from 'react'
 import "./Profile.css"
 import ProfileImage from "../../assets/p_fill.svg"
-import Device from '../../components/Device/Device'
-import Owned from '../../components/Owned/Owned'
+import DeviceList from '../../components/Device/DeviceList'
+import OwnedList from '../../components/Owned/OwnedList'
 
 export default function Profile() {
   return (
@@ -47,31 +47,8 @@ export default function Profile() {
             </div>
           </div>
           <div className="items w-100">
-            <div className="last col g-16 half">
-              <div className="items-header">
-                <h3 className='items-title'>Last Login Devices</h3>
-                <div className="action">
-                  <button className='action-btn'>more</button>
-                </div>
-              </div>
-              <Device location={"MOSKOW"} ip={"192.168.1.1"} date={"01.01.2025"} platform={"Windows"}/>
-              <Device location={"MOSKOW"} ip={"192.168.1.1"} date={"01.01.2025"} platform={"Windows"}/>
-              <Device location={"MOSKOW"} ip={"192.168.1.1"} date={"01.01.2025"} platform={"Windows"}/>
-              <Device location={"MOSKOW"} ip={"192.168.1.1"} date={"01.01.2025"} platform={"Windows"}/>
-            </div>
-            <div className="ordered col g-16 half">
-              <div className="items-header">
-                <h3 className='items-title'>Owned Items</h3>
-                <div className="action">
-                  <button className='action-btn'>more</button>
-                </div>
-              </div>
-              <div className="w-100 wrapped">
-                <Owned type={"device"} prod={"Toshiba"} model={"T14 i5-8420"}/>
-                <Owned type={"device"} prod={"Toshiba"} model={"T14 i5-8420"}/>
-                <Owned type={"device"} prod={"Toshiba"} model={"T14 i5-8420"}/>
-              </div>
-            </div>
+            <DeviceList />
+            <OwnedList />
           </div>
         </div>
     </div>

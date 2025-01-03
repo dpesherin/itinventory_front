@@ -2,7 +2,7 @@
     position: fixed;
     background-color: transparent;
     height: calc(100vh - 45px - 45px);
-    transition: 1.25s ease-in-out;
+    transition: 1.2s ease-in-out;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -21,11 +21,6 @@
 .transparent{
     cursor: default;
     background-color: transparent !important;
-}
-@media screen and (width <= 1366px) {
-    .open{
-      width: 100vw;
-    }
 }
 #sidebar>.row{
     display: flex;
@@ -78,59 +73,64 @@
     color: #a8a8a8;
 }
 @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .fade-in {
-    animation: fadeIn 1.25s forwards;
-  }
-
-  .circle {
-    position: absolute;
-    top: 15px; 
-    left: 10px; 
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background-color: #242424;
+  from {
     opacity: 0;
-    pointer-events: none;
+    transform: translateY(-20px);
   }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
   
-@keyframes circleFade {
-    0% {
-        width: 15px;
-        height: 15px;
-        opacity: 0.85;
-        transform: translate(-50%, -50%);
-      }
-      30% {
-        width: 60px;
-        height: 60px;
-        opacity: 0.9;
-        transform: translate(-50%, -50%);
-      }
-      68%{
-        width: 100vw;
-        height: 100vw;
-        opacity: 0.999;
-        transform: translate(-50%, -50%);
-      }
-      100% {
-        width: 500vw;
-        height: 500vw;
-        opacity: 1;
-        transform: translate(-50%, -50%);
-      }
+.fade-in {
+  animation: fadeIn 1.25s forwards;
 }
 
-  .visible {
-    animation: circleFade 1s ease-in forwards;
+.circle {
+  position: absolute;
+  top: 15px; 
+  left: 10px; 
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #242424;
+  opacity: 0;
+  pointer-events: none;
+}
+  
+@keyframes circleFade {
+  0% {
+    width: 15px;
+    height: 15px;
+    opacity: 0.85;
+    transform: translate(-50%, -50%);
   }
+  30% {
+    width: 60px;
+    height: 60px;
+    opacity: 0.9;
+    transform: translate(-50%, -50%);
+  }
+  68%{
+    width: 100vw;
+    height: 100vw;
+    opacity: 0.999;
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    width: 500vw;
+    height: 500vw;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.visible {
+  animation: circleFade 1.2s ease-in forwards;
+}
+@media screen and (width <= 1366px) {
+  .open{
+    width: 100vw;
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "items": [
+        {
+            "type": "device",
+            "prod": "Asus",
+            "model": "ZenBook"
+        },
+        {
+            "type": "mobile",
+            "prod": "Samsung",
+            "model": "Galaxy S 21"
+        },
+        {
+            "type": "device",
+            "prod": "Asus",
+            "model": "ZenBook 15"
+        }
+    ]
+}

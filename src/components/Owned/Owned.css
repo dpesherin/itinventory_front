@@ -24,3 +24,11 @@
     font-weight: 700;
     text-transform: uppercase;
 }
+.p-skeleton{
+    width: 30%;
+    height: 14px;
+}
+.skeletonIco{
+    height: 36px;
+    width: 36px;
+}

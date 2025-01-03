@@ -1,0 +1,28 @@
+{
+    "items": [
+        {
+            "platform" : "WINDOWS",
+            "ip": "192.168.0.1",
+            "location": "Moskow",
+            "date": "01.01.2025"
+        },
+        {
+            "platform" : "WINDOWS",
+            "ip": "192.168.0.1",
+            "location": "Moskow",
+            "date": "01.01.2025"
+        },
+        {
+            "platform" : "WINDOWS",
+            "ip": "192.168.0.1",
+            "location": "Moskow",
+            "date": "01.01.2025"
+        },
+        {
+            "platform" : "WINDOWS",
+            "ip": "192.168.0.1",
+            "location": "Moskow",
+            "date": "01.01.2025"
+        }
+    ]
+}

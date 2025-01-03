@@ -65,3 +65,25 @@
 .sided{
   margin-left: 56px;
 }
+.icon-placeholder,
+.text-placeholder {
+  animation: pulse 2s infinite ease-in-out;
+}
+.icon-placeholder{
+  border-radius: 50%;
+}
+.text-placeholder{
+  border-radius: 6px;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #dcdcdc1a;
+  }
+  50% {
+    background-color: #dcdcdc8a;
+  }
+  100% {
+    background-color: #dcdcdc1a;
+  }
+}
