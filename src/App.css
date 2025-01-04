@@ -22,11 +22,6 @@
   width: 80vw;
   height: calc(100vh - 70px - 48px);
 }
-@media screen and (width <= 1366px) {
-  #content{
-    width: 100vw;
-  }
-}
 #root{
   display: flex;
   flex-direction: column;
@@ -75,6 +70,16 @@
 .text-placeholder{
   border-radius: 6px;
 }
+.input-placeholder{
+  position: relative;
+  width: 100% !important;
+  position: relative;
+  height: 34px !important;
+  padding: 0 12px;
+  border-radius: 9px;
+  font-weight: 600;
+  animation: pulse 2s infinite ease-in-out;
+}
 
 @keyframes pulse {
   0% {
@@ -85,5 +90,11 @@
   }
   100% {
     background-color: #dcdcdc1a;
+  }
+}
+
+@media screen and (width <= 1366px) {
+  #content{
+    width: 100vw;
   }
 }

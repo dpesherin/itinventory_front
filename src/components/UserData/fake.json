@@ -1,0 +1,12 @@
+{
+    "data":{
+        "avatar": "/src/assets/p_fill.svg",
+        "fio": "Иванов Иван",
+        "status": "Admin",
+        "email": "email@local.domain",
+        "login": "email@local.domain",
+        "office": "MOSCOW, GNEZDIKOVSKIY 2 ST 1",
+        "reg": "2024-01-01",
+        "last": "2024-01-01"
+    }
+}

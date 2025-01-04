@@ -13,12 +13,12 @@ export default function OwnedSkeleton() {
       <div className="device-data">
         <PlaceholderLoader
           className="text-placeholder"
-          width={100}
+          width={75}
           height={20}
         />
         <PlaceholderLoader
           className="text-placeholder"
-          width={100}
+          width={75}
           height={20}
         />
       </div>

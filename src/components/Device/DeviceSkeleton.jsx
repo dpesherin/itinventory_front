@@ -13,24 +13,24 @@ export default function DeviceSkeleton() {
         <div className="block-info">
             <PlaceholderLoader
                 className="text-placeholder"
-                width={100}
+                width={50}
                 height={20}
             />
             <PlaceholderLoader
                 className="text-placeholder"
-                width={100}
+                width={50}
                 height={20}
             />
         </div>
         <div className="block-info">
             <PlaceholderLoader
                 className="text-placeholder"
-                width={100}
+                width={50}
                 height={20}
             />
             <PlaceholderLoader
                 className="text-placeholder"
-                width={100}
+                width={50}
                 height={20}
             />
         </div>

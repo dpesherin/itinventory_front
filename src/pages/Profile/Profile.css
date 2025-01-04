@@ -214,6 +214,21 @@
         left: 50%;
         transform: translate(-50%, 0);
     }
+    .avatar-big-skeleton{
+        width: 75px !important;
+        height: 75px !important;
+        animation: pulse 2s infinite ease-in-out;
+    }
+}
+.avatar-big-skeleton{
+    border-radius: 50%;
+    animation: pulse 2s infinite ease-in-out;
+}
+.profile-fio-skeleton{
+    animation: pulse 2s infinite ease-in-out;
+}
+.status-user-skeleton{
+    animation: pulse 2s infinite ease-in-out;
 }
 @media screen and (width <= 576px){
     .container-profile{
